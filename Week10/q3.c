@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#define SIZE 100
+typedef struct Node 
+{
+	char * data;
+	struct Node * rlink, *llink;
+} node;
+typedef node * nodePtr;
+nodePtr createNode () {
+	nodePtr temp = (nodePtr)malloc(sizeof(node));
+	temp->data = (char *)malloc(SIZE * sizeof(char));
+	temp->llink = temp; temp->rlink = temp; return temp;
+}
+void insert (nodePtr head, char *val) {
+	nodePtr temp = createNode(), p;
+	temp->data = val; temp->rlink = head; head->llink = temp;
+	if (head->rlink == head) {
+		temp->llink = head; head->rlink = temp;
+	}
+	else {
+		p = head->rlink;
+		while (p->rlink != head) p = p->rlink;
+		temp->llink = p; p->rlink = temp;
+}}
+void inputList (nodePtr head) {
+	int i, n;
+	printf("Enter number of terms in the head: "); scanf("%d", &n);
+	printf("Enter the elements: ");
+	for (i = 0; i < n; ++i) {
+		char *item = (char *)malloc(SIZE * sizeof(char));
+		scanf(" %s", item); insert(head, item);
+}}
+nodePtr create () {
+	nodePtr li = createNode(); inputList(li);
+	return li;
+}
+void reverseList(nodePtr head) {
+	nodePtr slow = head->rlink, fast = head->rlink;	
+	while (fast != head) {
+		fast = fast->rlink;
+		if (fast != head) {
+			slow = slow->rlink; fast = fast->rlink;
+	}}
+	nodePtr temp1 = head->rlink, temp2 = head->llink;
+	while (temp1 != slow) {
+		char * swap = temp1->data;
+		temp1->data = temp2->data; temp2->data = swap;
+		temp1 = temp1->rlink; temp2 = temp2->llink;
+}}
+void displayList (nodePtr head) {
+	nodePtr temp = head->rlink;
+	while (temp->rlink != head) { 
+		printf("%s->", temp->data); temp = temp->rlink;
+	}printf("%s", temp->data);
+}
+void main () {
+	nodePtr head = create();
+	printf("\nInitially: "); displayList(head);
+	reverseList(head);
+	printf("\nAfter Reversal: ");displayList(head);
+}
