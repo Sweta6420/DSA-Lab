@@ -1,0 +1,124 @@
+$date
+	Thu Oct  6 14:23:16 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module mux4to1_tb $end
+$var wire 1 ! f $end
+$var reg 2 " S [1:0] $end
+$var reg 4 # W [0:3] $end
+$scope module uut $end
+$var wire 2 $ S [1:0] $end
+$var wire 4 % W [0:3] $end
+$var wire 2 & k [0:1] $end
+$var wire 1 ! f $end
+$scope module stage0 $end
+$var wire 1 ' s $end
+$var wire 2 ( w [0:1] $end
+$var reg 1 ) f $end
+$upscope $end
+$scope module stage1 $end
+$var wire 1 * s $end
+$var wire 2 + w [0:1] $end
+$var reg 1 , f $end
+$upscope $end
+$scope module stage2 $end
+$var wire 1 - s $end
+$var wire 2 . w [0:1] $end
+$var reg 1 ! f $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11 .
+0-
+1,
+b10 +
+0*
+1)
+b10 (
+0'
+b11 &
+b1010 %
+b0 $
+b1010 #
+b0 "
+1!
+$end
+#20
+0!
+0)
+b0 &
+b0 .
+0,
+1'
+1*
+b1 "
+b1 $
+#40
+1!
+1)
+b11 &
+b11 .
+1,
+0'
+0*
+1-
+b10 "
+b10 $
+#60
+0!
+0)
+b0 &
+b0 .
+0,
+1'
+1*
+b11 "
+b11 $
+#80
+b1 &
+b1 .
+1,
+0'
+0*
+0-
+b1 (
+b11 +
+b0 "
+b0 $
+b111 #
+b111 %
+#100
+1!
+b11 &
+b11 .
+1)
+1'
+1*
+b1 "
+b1 $
+#120
+b1 &
+b1 .
+0)
+0'
+0*
+1-
+b10 "
+b10 $
+#140
+b11 &
+b11 .
+1)
+1'
+1*
+b11 "
+b11 $
+#160

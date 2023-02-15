@@ -1,0 +1,188 @@
+$date
+	Thu Nov 17 16:34:13 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module q2_tb $end
+$var wire 5 ! Q [4:0] $end
+$var reg 1 " Clock $end
+$var reg 1 # clear $end
+$scope module uut $end
+$var wire 1 " Clock $end
+$var wire 1 # clear $end
+$var wire 5 $ Q [4:0] $end
+$scope module s0 $end
+$var wire 1 " Clock $end
+$var wire 1 % D $end
+$var wire 1 # clear $end
+$var reg 1 & Q $end
+$upscope $end
+$scope module s1 $end
+$var wire 1 " Clock $end
+$var wire 1 ' D $end
+$var wire 1 # clear $end
+$var reg 1 ( Q $end
+$upscope $end
+$scope module s2 $end
+$var wire 1 " Clock $end
+$var wire 1 ) D $end
+$var wire 1 # clear $end
+$var reg 1 * Q $end
+$upscope $end
+$scope module s3 $end
+$var wire 1 " Clock $end
+$var wire 1 + D $end
+$var wire 1 # clear $end
+$var reg 1 , Q $end
+$upscope $end
+$scope module s4 $end
+$var wire 1 " Clock $end
+$var wire 1 - D $end
+$var wire 1 # clear $end
+$var reg 1 . Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+1%
+b0 $
+0#
+1"
+b0 !
+$end
+#5
+0"
+#10
+1'
+b10000 !
+b10000 $
+1&
+1"
+1#
+#15
+0"
+#20
+1)
+b11000 !
+b11000 $
+1(
+1"
+#25
+0"
+#30
+1+
+b11100 !
+b11100 $
+1*
+1"
+#35
+0"
+#40
+1-
+b11110 !
+b11110 $
+1,
+1"
+#45
+0"
+#50
+0%
+b11111 !
+b11111 $
+1.
+1"
+#55
+0"
+#60
+0'
+b1111 !
+b1111 $
+0&
+1"
+#65
+0"
+#70
+0)
+b111 !
+b111 $
+0(
+1"
+#75
+0"
+#80
+0+
+b11 !
+b11 $
+0*
+1"
+#85
+0"
+#90
+0-
+b1 !
+b1 $
+0,
+1"
+#95
+0"
+#100
+1%
+b0 !
+b0 $
+0.
+1"
+#105
+0"
+#110
+1'
+b10000 !
+b10000 $
+1&
+1"
+#115
+0"
+#120
+1)
+b11000 !
+b11000 $
+1(
+1"
+#125
+0"
+#130
+1+
+b11100 !
+b11100 $
+1*
+1"
+#135
+0"
+#140
+1-
+b11110 !
+b11110 $
+1,
+1"
+#145
+0"
+#150
+0%
+b11111 !
+b11111 $
+1.
+1"

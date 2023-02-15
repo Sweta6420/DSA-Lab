@@ -1,0 +1,137 @@
+$date
+	Thu Sep 15 14:07:46 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module ex1_tb $end
+$var wire 1 ! s2 $end
+$var wire 1 " s1 $end
+$var wire 1 # s0 $end
+$var wire 1 $ co2 $end
+$var wire 1 % co1 $end
+$var wire 1 & c0 $end
+$var reg 1 ' ci1 $end
+$var reg 1 ( ci2 $end
+$var reg 1 ) x0 $end
+$var reg 1 * x1 $end
+$var reg 1 + x2 $end
+$var reg 1 , y0 $end
+$var reg 1 - y1 $end
+$var reg 1 . y2 $end
+$scope module dfa $end
+$var wire 1 ( ci2 $end
+$var wire 1 $ co2 $end
+$var wire 1 + x2 $end
+$var wire 1 . y2 $end
+$var wire 1 / s2_1 $end
+$var wire 1 ! s2 $end
+$var wire 1 0 co2_2 $end
+$var wire 1 1 co2_1 $end
+$scope module stage0 $end
+$var wire 1 1 c0 $end
+$var wire 1 / s0 $end
+$var wire 1 + x0 $end
+$var wire 1 . y0 $end
+$upscope $end
+$scope module stage1 $end
+$var wire 1 0 c0 $end
+$var wire 1 ! s0 $end
+$var wire 1 1 x0 $end
+$var wire 1 ( y0 $end
+$upscope $end
+$upscope $end
+$scope module fa $end
+$var wire 1 ' ci1 $end
+$var wire 1 % co1 $end
+$var wire 1 " s1 $end
+$var wire 1 * x1 $end
+$var wire 1 - y1 $end
+$upscope $end
+$scope module ha $end
+$var wire 1 & c0 $end
+$var wire 1 # s0 $end
+$var wire 1 ) x0 $end
+$var wire 1 , y0 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#20
+1!
+1"
+1#
+1(
+1'
+1,
+#40
+0!
+1/
+0(
+1.
+0'
+1-
+0,
+1)
+#60
+1%
+1!
+0"
+1&
+0#
+1(
+1'
+1,
+#80
+0%
+0!
+1"
+0(
+0.
+1+
+0'
+0-
+1*
+#100
+1%
+1!
+0"
+1(
+1'
+#120
+1$
+11
+0/
+0(
+1.
+0'
+1-
+#140
+10
+0!
+1"
+1(
+1'
+#160

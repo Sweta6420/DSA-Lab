@@ -1,0 +1,84 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x556b52cd60a0 .scope module, "convert_tb" "convert_tb" 2 4;
+ .timescale -9 -9;
+v0x556b52cecab0_0 .var "a", 3 0;
+v0x556b52cecb70_0 .net "b", 3 0, L_0x556b52cedbb0;  1 drivers
+S_0x556b52cd6230 .scope module, "uut" "convert" 2 8, 3 1 0, S_0x556b52cd60a0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 4 "a";
+    .port_info 1 /OUTPUT 4 "b";
+L_0x556b52cece80 .functor NOT 1, L_0x556b52cecdb0, C4<0>, C4<0>, C4<0>;
+L_0x556b52cecff0 .functor NOT 1, L_0x556b52cecf20, C4<0>, C4<0>, C4<0>;
+L_0x556b52ced0e0 .functor AND 1, L_0x556b52cece80, L_0x556b52cecff0, C4<1>, C4<1>;
+L_0x556b52ced1f0 .functor OR 1, L_0x556b52cecd10, L_0x556b52ced0e0, C4<0>, C4<0>;
+L_0x556b52ced330 .functor AND 1, L_0x556b52cecc40, L_0x556b52ced1f0, C4<1>, C4<1>;
+L_0x556b52ced660 .functor OR 1, L_0x556b52ced4e0, L_0x556b52ced5c0, C4<0>, C4<0>;
+L_0x556b52ced7b0 .functor XOR 1, L_0x556b52ced440, L_0x556b52ced660, C4<0>, C4<0>;
+L_0x556b52ceda50 .functor XOR 1, L_0x556b52ced8c0, L_0x556b52ced9b0, C4<0>, C4<0>;
+v0x556b52cc3440_0 .net *"_ivl_11", 0 0, L_0x556b52cecf20;  1 drivers
+v0x556b52cc4bf0_0 .net *"_ivl_12", 0 0, L_0x556b52cecff0;  1 drivers
+v0x556b52cc5af0_0 .net *"_ivl_14", 0 0, L_0x556b52ced0e0;  1 drivers
+v0x556b52cebb20_0 .net *"_ivl_16", 0 0, L_0x556b52ced1f0;  1 drivers
+v0x556b52cebc00_0 .net *"_ivl_18", 0 0, L_0x556b52ced330;  1 drivers
+v0x556b52cebd30_0 .net *"_ivl_23", 0 0, L_0x556b52ced440;  1 drivers
+v0x556b52cebe10_0 .net *"_ivl_25", 0 0, L_0x556b52ced4e0;  1 drivers
+v0x556b52cebef0_0 .net *"_ivl_27", 0 0, L_0x556b52ced5c0;  1 drivers
+v0x556b52cebfd0_0 .net *"_ivl_28", 0 0, L_0x556b52ced660;  1 drivers
+v0x556b52cec0b0_0 .net *"_ivl_3", 0 0, L_0x556b52cecc40;  1 drivers
+v0x556b52cec190_0 .net *"_ivl_30", 0 0, L_0x556b52ced7b0;  1 drivers
+v0x556b52cec270_0 .net *"_ivl_35", 0 0, L_0x556b52ced8c0;  1 drivers
+v0x556b52cec350_0 .net *"_ivl_37", 0 0, L_0x556b52ced9b0;  1 drivers
+v0x556b52cec430_0 .net *"_ivl_38", 0 0, L_0x556b52ceda50;  1 drivers
+v0x556b52cec510_0 .net *"_ivl_44", 0 0, L_0x556b52ceddf0;  1 drivers
+v0x556b52cec5f0_0 .net *"_ivl_5", 0 0, L_0x556b52cecd10;  1 drivers
+v0x556b52cec6d0_0 .net *"_ivl_7", 0 0, L_0x556b52cecdb0;  1 drivers
+v0x556b52cec7b0_0 .net *"_ivl_8", 0 0, L_0x556b52cece80;  1 drivers
+v0x556b52cec890_0 .net "a", 3 0, v0x556b52cecab0_0;  1 drivers
+v0x556b52cec970_0 .net "b", 3 0, L_0x556b52cedbb0;  alias, 1 drivers
+L_0x556b52cecc40 .part v0x556b52cecab0_0, 3, 1;
+L_0x556b52cecd10 .part v0x556b52cecab0_0, 2, 1;
+L_0x556b52cecdb0 .part v0x556b52cecab0_0, 1, 1;
+L_0x556b52cecf20 .part v0x556b52cecab0_0, 0, 1;
+L_0x556b52ced440 .part v0x556b52cecab0_0, 2, 1;
+L_0x556b52ced4e0 .part v0x556b52cecab0_0, 0, 1;
+L_0x556b52ced5c0 .part v0x556b52cecab0_0, 1, 1;
+L_0x556b52ced8c0 .part v0x556b52cecab0_0, 1, 1;
+L_0x556b52ced9b0 .part v0x556b52cecab0_0, 0, 1;
+L_0x556b52cedbb0 .concat8 [ 1 1 1 1], L_0x556b52ceddf0, L_0x556b52ceda50, L_0x556b52ced7b0, L_0x556b52ced330;
+L_0x556b52ceddf0 .part v0x556b52cecab0_0, 0, 1;
+    .scope S_0x556b52cd60a0;
+T_0 ;
+    %vpi_call 2 10 "$dumpfile", "convert_tb.vcd" {0 0 0};
+    %vpi_call 2 11 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x556b52cd60a0 {0 0 0};
+    %pushi/vec4 10, 0, 4;
+    %store/vec4 v0x556b52cecab0_0, 0, 4;
+    %delay 20, 0;
+    %pushi/vec4 5, 0, 4;
+    %store/vec4 v0x556b52cecab0_0, 0, 4;
+    %delay 20, 0;
+    %pushi/vec4 4, 0, 4;
+    %store/vec4 v0x556b52cecab0_0, 0, 4;
+    %delay 20, 0;
+    %pushi/vec4 7, 0, 4;
+    %store/vec4 v0x556b52cecab0_0, 0, 4;
+    %delay 20, 0;
+    %pushi/vec4 9, 0, 4;
+    %store/vec4 v0x556b52cecab0_0, 0, 4;
+    %delay 20, 0;
+    %vpi_call 2 17 "$display", "Test Complete" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "convert_tb.v";
+    "./convert.v";

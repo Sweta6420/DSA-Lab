@@ -1,0 +1,70 @@
+$date
+	Thu Sep 22 15:57:11 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module comp_tb $end
+$var wire 1 ! l $end
+$var wire 1 " g $end
+$var wire 1 # e $end
+$var reg 5 $ a [4:0] $end
+$var reg 5 % b [4:0] $end
+$scope module uut $end
+$var wire 5 & a [4:0] $end
+$var wire 5 ' b [4:0] $end
+$var wire 1 # e $end
+$var wire 1 " g $end
+$var wire 1 ! l $end
+$var wire 5 ( i [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11101 (
+b1010 '
+b1000 &
+b1010 %
+b1000 $
+0#
+0"
+1!
+$end
+#20
+0!
+1#
+b11111 (
+b110 %
+b110 '
+b110 $
+b110 &
+#40
+1"
+0!
+0#
+b10101 (
+b11 %
+b11 '
+b1001 $
+b1001 &
+#60
+0"
+1#
+b11111 (
+b1111 %
+b1111 '
+b1111 $
+b1111 &
+#80
+1!
+0#
+b10101 (
+b1011 %
+b1011 '
+b1 $
+b1 &
+#100
