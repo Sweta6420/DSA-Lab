@@ -62,12 +62,12 @@ select t.dept_name,t.val from total_sal t, avg_total_sal a
 where t.val>a.avg_val;
 
 15. 
-with enrollments(course,sec,sem,year,val) as
+with enrolments(course,sec,sem,year,val) as
 (select course_id,sec_id,semester,year,count(id) from takes
 where semester='Fall' and year=2009
 group by course_id,sec_id,semester,year)
-select e.course,e.sem,e.sec,e.year,e.val from enrollments e
-where e.val = (select max(val) from enrollments);
+select e.course,e.sem,e.sec,e.year,e.val from enrolments e
+where e.val = (select max(val) from enrolments);
 
 16. 
 with sum_tot_cred(dept,val) as (select dept_name,sum(tot_cred) 
@@ -95,6 +95,9 @@ delete from course where dept_name='Comp. Sci.';
 19. 
 update student set dept_name='IT' where dept_name='Comp. Sci.';
 --not possible because of foreign key
+insert into department values('IT','Packard',95000);
+update student set dept_name='IT' where dept_name='Comp. Sci.';
+--added it dept in department table and updated in student table
 
 20. 
 update instructor set salary=
