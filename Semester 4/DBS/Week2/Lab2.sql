@@ -263,9 +263,9 @@ update emp set dob='13-JUN-1995' where empno=4;
 1 row updated.
 
 24.
-select to_char(to_date(dob,'DD-MON-YY'),'DD-MON-YYYY') from emp; 
-select to_date(dob,'DD-MON-YY') from employee; 
-select to_char(to_date(dob,'DD-MON-YY'),'DD-MM-YYYY') from emp; 
+select to_char(dob,'DD-MON-YYYY') from emp; 
+select dob from employee; 
+select to_char(dob,'DD-MM-YY') from emp; 
 
 25. 
 select empname, to_char(dob,'YEAR') from emp;
@@ -284,7 +284,7 @@ select empname, to_char(dob,'Month') from emp;
 select last_day(dob), dayname(dob) from emp where emp_name='Rohan';
 
 29. 
-select round(months_between(trunc(current_date),to_date(dob,'DD-MON-YY'))/12,0) as age from emp;
+select round(months_between(trunc(current_date),dob)/12,0) as age from emp;
 
 30. 
 select next_day(add_months(dob,720),'Saturday') from emp;
