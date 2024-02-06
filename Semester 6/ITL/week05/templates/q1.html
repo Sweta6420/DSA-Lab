@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Q1</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function myfunc() {
+            var name = document.getElementById("name").value;
+            var dob = document.getElementById("dob").value;
+            var addr = document.getElementById("addr").value;
+            var contact = document.getElementById("contact").value;
+            var email = document.getElementById("email").value;
+            var n1 = document.getElementById("eng").value;
+            var n2 = document.getElementById("phy").value
+            var n3 = document.getElementById("chem").value;
+            var n4 = parseInt(n1) + parseInt(n2) + parseInt(n3);
+            n4 = n4 / 3;
+            document.getElementById('myTxt').value = 'Name ' + name + '\ndob ' + dob + '\naddress ' + addr + '\ncontact ' + contact + '\nemail ' + email;
+            document.getElementById('textarea').innerHTML = "Output: " + n4 + "%";
+        }
+    </script>
+    Name : <input type="text" id="name"><br>
+    DOB: <input type="text" id="dob"><br>
+    Address: <input type="text" id="addr"><br>
+    Contact Number: <input type="text" id="contact"><br>
+    Email : <input type="text" id="email"><br>
+    English : <input type="text" id="eng"><br>
+    Physics : <input type="text" id="phy"><br>
+    Chemistry: <input type="text" id="chem"><br>
+    <button onclick="myfunc()">Find</button><br />
+    <label id="textarea"></label>
+    <textarea id="myTxt"></textarea>
+
+</body>
+</html>

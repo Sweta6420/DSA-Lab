@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Q2</title>
+</head>
+<body>
+    <script>
+        function myfunc() {
+            var doj = document.getElementById("doj").value;
+            // Below one is the single line logic to calculate the no. of years...
+            var years = new Date(new Date() - new Date(doj)).getFullYear() - 1970;
+            console.log(years);
+            var res = document.getElementById("res");
+            if (years > 5) {
+                res.innerHTML = "Yes!!!"
+            }
+            else {
+                res.innerHTML = "NO"
+            }
+        }
+    </script>
+    <label for="cars">Employee ID:</label>
+    <select name="id" id="id">
+        <option value="">-Select Your E-ID-</option>
+        <option value="e1">231</option>
+        <option value="e2">232</option>
+        <option value="e3">233</option>
+        <option value="e4">234</option>
+    </select><br /><br />
+    Choose Date of Joining:  <input type="date" id="doj"/><br /><br />
+    <button onclick="myfunc()">Am I eligible for Promotion?</button><br />
+    <p id="res"></p>
+</body>
+</html>
