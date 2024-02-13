@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    {%load static %}
+    <img src="{% static 'potter.jpg' %}" style="height: 400px; width: 300px" /><br /><br />
+    <a href="{% url 'meta' %}">Meta</a><br /><br />
+    <a href="{% url 'review' %}">Reviews</a><br /><br />
+    <a href="{% url 'publish' %}">Publisher</a><br />
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function change() {
+            text = document.getElementById("text").value;
+            imgsrc = document.getElementById("img").value;
+            bgc = document.getElementById("bgc").value;
+            fontsize = document.getElementById("fontsize").value;
+            textcolor = document.getElementById("textcolor").value;
+            title = document.getElementById("title").value;
+            titlesize = document.getElementById("titlesize").value;
+            titlefont = document.getElementById("titlefont").value;
+            document.getElementById("ptitle").style.fontSize = titlesize;
+            document.getElementById("ptitle").style.fontFamily = titlefont;
+            document.getElementById("ptitle").innerHTML = title;
+            document.getElementById("ptext").innerHTML = text;
+            document.getElementById("ptext").style.fontSize = fontsize;
+            document.getElementById("ptext").style.color = textcolor;
+            document.getElementById("poster").style.backgroundColor = bgc;
+            if (imgsrc == "trees") {
+                document.getElementById("img").src =  "{% static 'trees.jpg' %}";
+            }
+            else if (imgsrc == "mountains") {
+                document.getElementById("img").src =  "{% static 'mountains.jpg' %}";
+            }
+        }
+    </script>
+    {% load static %}
+    Enter Poster Text: <input type="text" name="text" id="text"><br><br>
+    <select name="img" id="img">
+        <option selected="selected" disabled>Select Image</option>
+        <option value="trees">trees</option>
+        <option value="mountains">mountains</option>
+    </select><br><br>
+    <select name="bgc" id="bgc">
+        <option selected="selected" disabled>Select Backgroung Color</option>
+        <option value="#FFFF00">yellow</option>
+        <option value="#0000FF">blue</option>
+    </select><br><br>
+    <select name="font_size" id="fontsize">
+        <option selected="selected" disabled>Select Text Font SIze</option>
+        <option value="12px">12 px</option>
+        <option value="18px">18 px</option>
+    </select><br><br>
+    <select name="text_color" id="textcolor">
+        <option selected="selected" disabled>Select Text Color</option>
+        <option value="#000000">black</option>
+        <option value="#800080">purple</option>
+    </select><br><br>
+    Enter Poster Title: <input type="text" name="title", id="title"><br><br>
+    <select name="title_size" id="titlesize">
+        <option selected="selected" disabled>Select Title Font SIze</option>
+        <option value="20px">20 px</option>
+        <option value="26px">26 px</option>
+    </select><br><br>
+    <select name="title_font" id="titlefont">
+        <option selected="selected" disabled>Select Text Font Family</option>
+        <option value="Helvetica">Helvetica</option>
+        <option value="Ariel">Ariel</option>
+    </select><br><br>
+    <input type="button" onclick="change()" value="Design Magazine"/><br><br><br><br>
+    <div style="height: 300px; text-align:center;" id="poster">
+        <h1 id="ptitle"></h1>
+        <p1 id="ptext"></p1>
+        <img id="img" />
+    </div>
+</body>
+</html>
+
+
