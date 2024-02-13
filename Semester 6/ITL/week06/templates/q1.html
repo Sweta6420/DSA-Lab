@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Q1</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function calc() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var oper = document.getElementById("oper").value;
+            var res;
+            if (oper=="+"){
+                res = parseInt(num1) + parseInt(num2);
+            }
+            else if (oper=="-"){
+                res = parseInt(num1) - parseInt(num2);
+            }
+            else if (oper=="*"){
+                res = parseInt(num1) * parseInt(num2);
+            }
+            else if (oper=="/"){
+                res = parseInt(num1) / parseInt(num2);
+            }
+            document.getElementById("result").innerHTML = "Result = " + res
+        }
+    </script>
+    Enter Num1: <input type="text" id="num1"/><br />
+    Enter Num2: <input type="text" id="num2" /><br />
+    Enter Operator: 
+    <select id="oper">
+        <option value="">-Choose An Operator-</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select><br />
+    <input type="button" onclick="calc()" value="Calculate!"/><br />
+    <p id="result"></p>
+</body>
+</html>
