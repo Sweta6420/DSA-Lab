@@ -1,0 +1,50 @@
+Las Vegas	Men's Clothing	208.97	Visa
+Miami	Crafts	84.11	Amex
+Tucson	Crafts	489.93	Cash
+San Francisco	Men's Clothing	388.3	Visa
+Dallas	Consumer Electronics	145.63	Cash
+Tampa	Garden	353.23	MasterCard
+Washington	Women's Clothing	481.31	MasterCard
+San Jose	DVDs	492.8	Discover
+Newark	Consumer Electronics	410.37	Visa
+Memphis	Garden	354.44	Discover
+Jersey City	Books	369.07	Amex
+Plano	Women's Clothing	4.65	Cash
+Buffalo	Video Games	337.35	Discover
+Louisville	Music	213.64	Discover
+Miami	Women's Clothing	154.64	Cash
+Los	Angeles Pet Supplies	164.5	Discover
+Birmingham	Men's Clothing	1.64	Cash
+Mesa	Toys	13.79	Visa
+Wichita	Consumer Electronics	158.25	Amex
+Indianapolis	Pet Supplies	152.77	Amex
+San Bernardino	Video Games	332.43	Discover
+Indianapolis	Health and Beauty	464.36	Amex
+Stockton	Men's Clothing	180.61	Discover
+Austin	Health and Beauty	48.09	Visa
+Buffalo	Garden	386.56	Amex
+Santa Ana	Books	2.75	Amex
+Gilbert	DVDs	11.31	Amex
+New York	DVDs	221.35	Visa
+Corpus Christi	Health and Beauty	157.91	Amex
+Riverside	Video Games	349.41	Visa
+Chicago	Children's Clothing	364.53	MasterCard
+Fremont	Video Games	404.17	Cash
+Rochester	Video Games	460.39	Amex
+Raleigh	Computers	61.22	MasterCard
+Chicago	Pet Supplies	431.73	Cash
+Cincinnati	Computers	288.32	Discover
+Rochester	Consumer Electronics	342.62	Amex
+Pittsburgh	Books	498.29	Cash
+Rochester	Cameras	485.71	MasterCard
+Glendale	Video Games	14.09	Amex
+Cincinnati	Crafts	1.41	Amex
+Irvine	Video Games	15.19	Discover
+Boston	Video Games	397.21	Visa
+Scottsdale	Garden	214.32	Discover
+Atlanta	Garden	189.22	Visa
+Cincinnati	Men's Clothing	443.78	Visa
+Lubbock	Garden	27.68	Cash
+Cincinnati	Cameras	129.6	Cash
+Santa Ana	Computers	282.13	MasterCard
+Aurora	DVDs	82.38	Discover
