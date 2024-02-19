@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Q1</title>
+		<style>
+		table, th, td {
+		  border: 1px solid black;
+		  border-collapse: collapse;
+		  padding: 10px;
+		}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script type = "text/javascript" language = "javascript">
+			$(document).ready(function() {
+				$("table tr:even").css({"background-color":"red"});
+				$("table tr:nth-child(2n)").css({"background-color":"yellow"});
+				$("#button").click(function() {
+					$("#mydiv").animate({right:'250px'});
+				});
+			}); 
+		</script>
+	</head>
+	<body>
+		<div id = "mydiv" style="position: relative; float:right;">
+			<table>
+				<tr>
+					<th>A</th>
+					<th>B</th>
+					<th>C</th>
+				</tr>
+				<tr>
+					<th>A</th>
+					<th>B</th>
+					<th>C</th>
+				</tr>
+				<tr>
+					<th>A</th>
+					<th>B</th>
+					<th>C</th>
+				</tr>
+			</table>
+			<br>
+			<img src="myimage.png" height=60px width=60px style="position: relative;  float:right;">
+		</div>
+		<br>
+		<input type="button" value="Click to move" id="button"></input>
+		
+	</body>
+</html> 
