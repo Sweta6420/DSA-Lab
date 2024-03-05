@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Success</title>
+    </head>
+    <body>
+        {% if context %}
+        <h1>Welcome {{ context.name }}<br><br></h1>
+        Your CGPA is = {{context.marks}}
+        {% else %} 
+        No data found
+        {% endif %}
+    </body>
+</html>
