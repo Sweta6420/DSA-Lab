@@ -1,7 +1,7 @@
 ### Semester 6 Labs
 
-ITL
+- ITL
 
-DSL
+- DSL
 
-PPL
+- PPL
